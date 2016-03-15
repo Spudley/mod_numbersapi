@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4" client="site" method="upgrade">
+	<name>MOD_NUMBERSAPI_NAME</name>
+	<author>Simon Champion</author>
+	<creationDate>March 2016</creationDate>
+    <copyright>Copyright (C) 2016 Simon Champion.</copyright>
+    <license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <authorEmail>simon@simonchampion.net</authorEmail>
+	<version>1.0.0</version>
+	<description>MOD_NUMBERSAPI_DESCRIPTION</description>
+	<files>
+		<filename module="mod_numbersapi">mod_numbersapi.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_numbersapi.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_numbersapi.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="numberOpt" type="radio" description="MOD_NUMBERSAPI_NUMBEROPT_DESC" label="MOD_NUMBERSAPI_NUMBEROPT_LABEL" default="random">
+                    <option value="random">MOD_NUMBERSAPI_NUMBEROPT_RANDOM</option>
+                    <option value="fromArg">MOD_NUMBERSAPI_NUMBEROPT_FROMARG</option>
+                    <option value="fixed">MOD_NUMBERSAPI_NUMBEROPT_FIXED</option>
+                </field>
+                <field
+                    name="number"
+                    type="text"
+                    label="MOD_NUMBERSAPI_NUMBER_LABEL"
+                    description="MOD_NUMBERSAPI_NUMBER_DESC"
+                    default="2001" />
+                <field name="type" type="radio" description="MOD_NUMBERSAPI_TYPE_DESC" label="MOD_NUMBERSAPI_TYPE_LABEL" default="year">
+                    <option value="year">MOD_NUMBERSAPI_TYPE_YEAR</option>
+                    <option value="date">MOD_NUMBERSAPI_TYPE_DATE</option>
+                    <option value="trivia">MOD_NUMBERSAPI_TYPE_TRIVIA</option>
+                    <option value="math">MOD_NUMBERSAPI_TYPE_MATH</option>
+                </field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
