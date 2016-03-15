@@ -65,6 +65,14 @@ Support
 
 Please use the Github issues tracker to report any bugs or feature requests.
 
+If the issue is with the API itself or with the content it produces, please report it directly to the maintainers of the API.
+
+
+Caveats and known issues
+------------------------
+
+* The author of this module is not connected with the operators of the Numbers API, and cannot take responsibility for any content that is produced by it.
+* The correct functioning of this module is obviously dependant on the Numbers API remaining online.
 
 
 Todo
@@ -73,6 +81,8 @@ Todo
 * Provide a UI for entering a number to query.
 * Allow the trivia type to be random.
 * Allow the trivia type to be specified in URL parameters.
+* Implement additional features from the API.
+* See if there's a way to implement caching so that we don't have to query the API on every page load.
 
 
 Trademarks and Licenses
